@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML страница</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image.png">
+</head>
+
+<body>
+
+    <header id="q44">
+        <img src="image.png" alt="Описание картинки для скрин-ридеров и поисковиков">
+        <nav class="menu">
+            <p>
+                <a href="#q22">Фото1</a>|
+                <a href="#q11">Фото2</a>|
+                <a href="#q33">Таблица</a>
+            </p>
+        </nav>
+        <h2>HTML страница</h2>
+    </header>
+
+    <div>
+        <h1>Список гипер ссылок</h1>
+        <ul>
+            <li><a href="http://www.kubsu.ru">Главная страница сайта kubsu.ru</a></li>
+            <li><a href="https://www.kubsu.ru">Главная страница сайта kubsu.ru через HTTPS</a></li>
+            <li id="q22"><a href="https://kubsu.ru"><img src="https://trikky.ru/wp-content/blogs.dir/1/files/2023/03/23/zyro-image-11.jpg" alt="Изображение ссылки"></a></li>
+            <li><a href="https://tinyurl.com/426wk6dr">Сокращенная ссылка на внутреннюю страницу</a></li>
+            <li><a href="https://tinyurl.com/2s4k5upr">Сокращенная ссылка на главную страницу</a></li>
+            <li><a href="#q22">Ссылка на фрагмент текущей страницы</a></li>
+            <li><a href="https://www.kubsu.ru/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами в URL</a></li>
+            <li><a href="https://www.kubsu.ru/page?id=123">Ссылка с параметром id в URL</a></li>
+            <li><a href="current-page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="about/about-page.html">Относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href="../parent-page.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../ancestor-page.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+            <li><p>Контекстная <a href="https://www.kubsu.ru">ссылка в тексте абзаца</a></p></li>
+            <li><a href="https://www.kubsu.ru#region-page-bottom">Ссылка на фрагмент страницы стороннего сайта</a></li>
+            <li id="q11">
+                <img src="https://trikky.ru/wp-content/blogs.dir/1/files/2023/03/23/zyro-image-11.jpg" usemap="#image-map" alt="Карта изображения">
+                <map name="image-map">
+                    <area shape="rect" coords="10,10,60,60" href="https://www.kubsu.ru" alt="Прямоугольная область">
+                    <area shape="circle" coords="460,60,40" href="https://ru.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_64664723.htm" alt="Круглая область">
+                    <area shape="rect" coords="10,440,160,490" href="https://www.google.com" alt="Прямоугольная область">
+                    <area shape="circle" coords="460,440,40" href="https://www.google.com" alt="Круглая область">
+                </map>
+            </li>
+            <li><a href="#">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="https://www.kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+            <li><a href="https://www.kubsu.ru" rel="noindex">Запрещенная для индексации поисковиками ссылка</a></li>
+            <li>
+                <ol>
+                    <li><a href="https://www.kubsu.ru" title="Первая страница">Первая страница</a></li>
+                    <li><a href="https://www.kubsu.ru/index.php" title="Вторая страница">Вторая страница</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/timetable" title="Третья страница">Третья страница</a></li>
+                </ol>
+            </li>
+            <li><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1 id="q33">Таблица</h1>
+        <figure class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Колонка</th>
+                        <th>Колонка</th>
+                        <th>Колонка</th>
+                        <th>Колонка</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td colspan="2">объединенная ............... Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td colspan="2">объединенная ............... Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                        <td>Ячейка</td>
+                    </tr>
+                </tbody>
+            </table>
+        </figure>
+    </div>
+
+    <div>
+        <h1>Форма</h1>
+        <form action="submit_form.php" method="post" onsubmit="return validateForm()">
+            <label for="name">ФИО:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Дата рождения:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Пол:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Мужской</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Женский</label><br><br>
+
+            <label for="languages">Любимый язык программирования:</label>
+            <select id="languages" name="languages[]" multiple required>
+                <option value="pascal">Pascal</option>
+                <option value="c">C</option>
+                <option value="c++">C++</option>
+                <option value="javascript">JavaScript</option>
+                <option value="php">PHP</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="haskell">Haskell</option>
+                <option value="clojure">Clojure</option>
+                <option value="prolog">Prolog</option>
+                <option value="scala">Scala</option>
+            </select><br><br>
+
+            <label for="bio">Биография:</label><br>
+            <textarea id="bio" name="bio" rows="5" cols="40" required></textarea><br><br>
+
+            <input type="checkbox" id="contract" name="contract" required>
+            <label for="contract">С контрактом ознакомлен (а)</label><br><br>
+
+            <input type="submit" value="Сохранить">
+        </form>
+
+        <script>
+            function validateForm() {
+            const name = document.getElementById('name').value;
+            const nameRegex = /^[ А-Яа-яЁё]+\s[А-Яа-яЁё]+\s[А-Яа-яЁё]+$/;
+            if (!nameRegex.test(name) || name.split(' ').some(word => word.length < 3)) {
+            alert("ФИО должно состоять из трёх слов, разделённых пробелом, каждое не короче 3 символов и содержать только кириллицу");
+            return false;
+            }
+
+            const phone = document.getElementById('phone').value;
+            const phoneRegex = /^\+79\d{9}$/;
+            if (!phoneRegex.test(phone)) {
+            alert("Телефон должен начинаться с +79 и содержать 9 цифр после.");
+            return false;
+            }
+
+            const email = document.getElementById('email').value;
+            if (email.length < 6) {
+            alert("Email должен содержать не менее 6 символов.");
+            return false;
+            }
+
+            const bio = document.getElementById('bio').value;
+            if (bio.length < 30) {
+            alert("Биография должна содержать не менее 30 символов.");
+            return false;
+            }
+
+            const dob = document.getElementById('dob').value;
+            const birthYear = new Date(dob).getFullYear();
+            if (birthYear >= 2017) {
+            alert("Дата рождения должна быть раньше 2017 года.");
+            return false;
+            }
+
+            return true;
+            }
+        </script>
+    </div>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+</html>
